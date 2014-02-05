@@ -1,18 +1,21 @@
 /*global describe, it */
 'use strict';
 define( function( require ){
-	var jquery = require('jquery');
-	describe('Application', function() {
-	/*	it('should bootstrap app taking View dependencies', function() {
-			expect( typeof jquery ).to.equal( 'string' );
-		}); */
+	var jquery = require('jquery'),
+		Backbone = require('backbone'),
+		_ = require('underscore');
+	describe('Application', function() {		
 
-		it('Backbone test', function() {
+		it('Jquery test', function() {
 			expect( typeof jquery ).to.equal( 'function' );
 		});
 
-		it('Backbone test', function() {
-			expect( typeof jquery ).to.equal( 'string' );
+		it('Underscore test', function() {
+			expect( typeof Backbone ).to.equal( 'object' );
+		});
+
+		it('_ test', function() {
+			expect( typeof _ ).to.equal( 'function' );
 		});
 	});
 
